@@ -23,3 +23,37 @@ function openAP(course) {
         window.open("https://apstudents.collegeboard.org/courses/ap-computer-science-a", "_blank");
     }
 }
+
+function sidebarWork() {
+    const sidebar=document.getElementById("sidebar");
+    const main = document.getElementById("main");
+    const menuButton = document.getElementById("menu");
+
+    if (sidebar.style.display === "none") {
+        sidebar.style.display = "block";
+        main.style.marginLeft = "16%";
+        menuButton.style.color="black";
+        menuButton.style.border="1px solid black";
+    } else {
+        sidebar.style.display = "none";
+        main.style.marginLeft = "0";
+        menuButton.style.border = "1px solid white";
+        menuButton.style.color = "white";
+    }
+}
+
+function toggleList(id) {
+    const list = document.getElementById(id);
+    const menuButton = document.getElementById("menu");
+
+    if (list.style.display === "block") {
+        list.style.display = "none";
+    } else {
+        list.style.display = "block";
+        if (id === "courses_List") {
+            document.getElementById("clubList").style.display = "none";
+        } else {
+            document.getElementById("courses_List").style.display = "none";
+        }
+    }
+}
