@@ -1,0 +1,214 @@
+body {
+    background: rgb(28, 69, 135);
+    color: white;
+    /*font-family: "Times New Roman", Times, serif;*/
+
+}
+
+a[href*="google.com"] {
+    color: white;
+}
+
+#main {
+    margin-left: 16%;
+    padding: 0 0 30px 0;
+
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    > div {
+        padding-bottom: 20px;
+    }
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+div {
+    padding-bottom: 20px;
+}
+
+.course_listing {
+    padding-bottom: 40px;
+}
+
+div > p {
+    padding-bottom: 20px;
+}
+
+div > div > p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.extracurricular-h1 {
+    padding-bottom: 30px
+}
+
+/*
+#colleges > div {
+    display: grid;
+grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    img {
+        width: 10%;
+        height: 10%;
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+}
+
+ */
+
+.college-table {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+
+    > .college {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > img {
+            width: 40px;
+            height: 40px;
+            padding: 20px 20px 0;
+        }
+
+        > p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+.clubs img {
+        width: 250px;
+        height: 150px;
+        margin-right: 2px;
+}
+
+.ap_button {
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top:60px;
+}
+
+p {
+    font-size: 22px;
+}
+
+.carousel {
+    padding: 40px 0;
+
+    table {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    td {
+        padding: 0;
+    }
+
+    .slide_frame {
+        width: 100%;
+        background: black;
+
+        > img {
+            display: block;
+            width: 100%;
+            height: 32vw;
+        }
+    }
+
+    .arrow {
+        padding: 2px 6px;
+        font-size: 18px;
+        background: gold;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+#menu {
+    position: fixed;
+    top: 6px;
+    left: 6px;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#sidebar a:hover {
+    background: white
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16%;
+    height: 100%;
+    padding-top: 40px;
+    background: gold;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+    }
+
+    .side_title {
+        padding: 10px 0 25px;
+
+        > h2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px 20px;
+            font-size: 25px;
+        }
+
+        > h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+
+    .items {
+        padding: 40px 10px;
+    }
+
+    .little_list {
+        display: none;
+
+        a {
+            padding: 8px 10px;
+            font-size: 14px;
+        }
+    }
+}
